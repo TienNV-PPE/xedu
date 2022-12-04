@@ -1,0 +1,135 @@
+:root {
+  --color-1: #e8f1f2;
+  --color-2: #1b98e0;
+  --color-3: #247ba0;
+  --color-4: #006494;
+  --color-5: #13293d;
+}
+
+.wrapper, .wrapper .top-header, .wrapper .page-footer, .wrapper .full-search-bar{
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body > div.wrapper > header > nav > ul > li:nth-child(2),
+body > div.wrapper > header > nav > ul > li:nth-child(3),
+.mobile-search-button{
+  display: none;
+}
+.features-section{
+  display: none;
+}
+.banner-item{
+  position: relative;
+}
+.absolute-x-y{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.btn-video-play{
+  width: auto;
+  height: auto;
+  z-index: 10;
+}
+.-m-3{
+  margin: -1rem;
+}
+.course-detail .trending-category{
+  margin-top: 1rem!important;
+  background-color: var(--color-1);
+}
+.alert-warning, .alert-secondary{
+  background-color: var(--color-2);
+  border: none;
+  color: #fff;
+}
+.alert-secondary{
+background-color:var(--color-4);
+}
+.btn-warning{
+  background-color: var(--color-4);
+  border: none;
+  color: #fff;
+}
+
+/* The heart of the matter */
+.testimonial-group > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.testimonial-group > .row > .col-4 {
+  display: inline-block;
+}
+.course-detail .top-header{
+  height: auto;
+}
+.course-days{
+  margin-top: .3rem;
+  /* text-align: center */
+}
+.course-days > div{
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.course-detail .page-content{
+  margin-top: 140px;
+}
+.img-contain{
+  object-fit: contain;
+}
+.img-cover{
+  object-fit: cover;
+}
+.btnCURDVideo{
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  background-color: transparent;
+  border-color: var(--color-2);
+}
+.btnCURDVideo > span{
+  height: auto;
+  width: auto;
+  color: var(--color-4);
+}
+.btnCURDVideo > span > i{
+  font-size: 3rem
+}
+.btn-dark{
+  background-color: var(--color-3);
+  border: none;
+}
+
+.btn-dark:hover{
+  background-color: var(--color-4);
+}
+@media (min-width: 576px){
+  .modal-dialog{
+  max-width: 700px;
+  }
+}
+.avatar{
+  display: flex;
+  align-items: center;
+}
+.avatar .ratio{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.avatar .ratio img{
+  object-fit: cover;
+}
+.bg-1{
+  background-color: var(--color-1);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: var(--color-4);
+}
+.course-days .btn:hover, .course-days .btn:focus, .course-days .btn-check:focus+.btn{
+  background-color: var(--color-4);
+}

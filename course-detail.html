@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" class="light-theme">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Học lập trình - SmileEye</title>
+
+    <!-- Plugins -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/plugins/metismenu/metisMenu.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/plugins/metismenu/mm-vertical.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/plugins/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/plugins/slick/slick-theme.css"
+    />
+
+    <!--CSS Files-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/dark-theme.css" rel="stylesheet" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    /> -->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+  </head>
+  <body class="course-detail">
+    <!--page loader-->
+    <div class="loader-wrapper d-none">
+      <div
+        class="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle"
+      >
+        <div class="spinner-border text-white" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <!--end loader-->
+
+    <!--start wrapper-->
+    <div class="wrapper">
+      <!--start to header-->
+      <header class="top-header fixed-top border-bottom">
+        <nav
+          class="navbar navbar-expand w-100 p-0 gap-3 align-items-center"
+        >
+          <div
+            class="nav-button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasSidenav"
+          >
+            <a href="javascript:;"><i class="bi bi-list"></i></a>
+          </div>
+          <div class="nav-button" onclick="history.back()">
+            <a href="javascript:;"
+              ><i class="bi bi-arrow-left"></i
+            ></a>
+          </div>
+          <div class="about-us">
+            <h6 class="mb-0 fw-bold text-dark">Khoá IT trung cấp</h6>
+          </div>
+          <form class="searchbar">
+            <div
+              class="position-absolute top-50 translate-middle-y search-icon start-0 ms-4"
+            >
+              <i class="bi bi-search"></i>
+            </div>
+            <input
+              class="form-control px-5"
+              type="text"
+              placeholder="Tìm kiếm"
+            />
+            <div
+              class="position-absolute top-50 translate-middle-y end-0 search-close-icon me-4"
+            >
+              <i class="bi bi-x-lg"></i>
+            </div>
+          </form>
+          <ul
+            class="navbar-nav ms-auto d-flex align-items-center top-right-menu"
+          >
+            <li class="nav-item mobile-search-button">
+              <a class="nav-link" href="javascript:;"
+                ><i class="bi bi-search"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html"
+                ><i class="bi bi-heart"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="cart.html">
+                <div class="cart-badge">8</div>
+                <i class="bi bi-bag"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#signInModal"
+                class="btn btn-light"
+              >
+                <i class="bi bi-person-circle text-secondary"></i>
+                <span class="">Login</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="alert alert-secondary m-0" role="alert">
+          Các bạn sẽ học được những kỹ năng thực tếđể làm việc với
+          khách hàng
+        </div>
+        <div class="course-days">
+          <div>
+            <a href="#ngay-1" class="btn btn-sm btn-warning">1</a>
+            <a href="#ngay-2" class="btn btn-sm btn-warning">2</a>
+            <a href="#ngay-3" class="btn btn-sm btn-warning">3</a>
+            <a href="#ngay-4" class="btn btn-sm btn-warning">4</a>
+            <a href="#ngay-5" class="btn btn-sm btn-warning">5</a>
+            <a href="#ngay-6" class="btn btn-sm btn-outline-secondary"
+              >6</a
+            >
+            <a href="#ngay-7" class="btn btn-sm btn-outline-primary"
+              >7</a
+            >
+            <a href="#ngay-7" class="btn btn-sm btn-outline-secondary"
+              >8</a
+            >
+            <a href="#ngay-7" class="btn btn-sm btn-outline-secondary"
+              >9</a
+            >
+            <a href="#ngay-7" class="btn btn-sm btn-outline-secondary"
+              >10</a
+            >
+            <a href="#ngay-7" class="btn btn-sm btn-outline-secondary"
+              >11</a
+            >
+            <a href="#ngay-7" class="btn btn-sm btn-outline-secondary"
+              >12</a
+            >
+            <a href="#ngay-7" class="btn btn-sm btn-outline-secondary"
+              >13</a
+            >
+            <a href="#ngay-7" class="btn btn-sm btn-outline-secondary"
+              >14</a
+            >
+            <a href="#ngay-7" class="btn btn-sm btn-outline-secondary"
+              >15</a
+            >
+          </div>
+        </div>
+      </header>
+      <!--end to header-->
+
+      <!--start to page content-->
+      <div class="page-content">
+        <!--start trending category-->
+        <div id="ngay-7" class="trending-category -m-3 p-3">
+          <div class="row row-cols-12 g-3">
+            <div class="col-12">
+              <h4 class="fw-bold section-title m-0">Ngày thứ 7</h4>
+            </div>
+            <div class="col-12">
+              <div class="alert alert-warning m-0" role="alert">
+                Các bạn về nhà quay video và nộp bài tập code phần:
+                <br />
+                1. FE Logo<br />
+                2. FE Menu <br />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row row-cols-12 g-1">
+                <div class="col-6">
+                  <button
+                    type="button"
+                    class="btn ratio btnCURDVideo"
+                    data-bs-toggle="modal"
+                    data-bs-target="#CURDVideoModal"
+                    style="--bs-aspect-ratio: 100%"
+                  >
+                    <span class="absolute-x-y">
+                      <i class="bi bi-plus-square-fill"></i><br />
+                      <span>Youtube URL cho FE Logo</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    type="button"
+                    class="btn ratio btnCURDVideo"
+                    data-bs-toggle="modal"
+                    data-bs-target="#CURDVideoModal"
+                    style="--bs-aspect-ratio: 100%"
+                  >
+                    <span class="absolute-x-y">
+                      <i class="bi bi-plus-square-fill"></i><br />
+                      <span>Youtube URL FE Menu</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="col-12">
+                  <div class="testimonial-group">
+                    <div class="row text-center g-1">
+                      <div class="col-4">
+                        <a
+                          href="course-video-play.html"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/1.png"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="col-4">
+                        <a
+                          href="course-video-play.html"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/2.png"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="col-4">
+                        <a
+                          href="course-video-play.html"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/3.png"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="col-4">
+                        <a
+                          href="course-video-play.html"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/4.png"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end trending category-->
+        <div class="py-2"></div>
+        <!--start trending category-->
+        <div id="ngay-6" class="trending-category -m-3 p-3">
+          <div class="row row-cols-12 g-3">
+            <div class="col-12">
+              <h4 class="fw-bold section-title m-0">Ngày thứ 6</h4>
+            </div>
+            <div class="col-12">
+              <div class="alert alert-warning m-0" role="alert">
+                Các bạn về nhà quay video và nộp bài tập code phần FE
+                Logo
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row row-cols-12 g-1">
+                <div class="col-12">
+                  <button
+                    type="button"
+                    class="btn ratio btnCURDVideo"
+                    data-bs-toggle="modal"
+                    data-bs-target="#CURDVideoModal"
+                    style="--bs-aspect-ratio: 50%"
+                  >
+                    <span class="absolute-x-y">
+                      <i class="bi bi-plus-square-fill"></i><br />
+                      <span>Youtube URL</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="col-12">
+                  <div class="testimonial-group">
+                    <div class="row text-center g-1">
+                      <div class="col-4">
+                        <button
+                          type="button"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signInModal"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/1.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                      <div class="col-4">
+                        <button
+                          type="button"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signInModal"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/2.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                      <div class="col-4">
+                        <button
+                          type="button"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signInModal"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/3.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                      <div class="col-4">
+                        <button
+                          type="button"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signInModal"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/4.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end trending category-->
+        <div class="py-2"></div>
+        <!--start trending category-->
+        <div id="ngay-5" class="trending-category -m-3 p-3">
+          <div class="row row-cols-12 g-3">
+            <div class="col-12">
+              <h4 class="fw-bold section-title m-0">Ngày thứ 5</h4>
+            </div>
+            <div class="col-12">
+              <div class="alert alert-warning m-0" role="alert">
+                Các bạn về nhà quay video và nộp bài tập code phần FE
+                Logo
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row row-cols-12 g-1">
+                <div class="col-12">
+                  <button
+                    type="button"
+                    class="btn btn-primary ratio overflow-hidden p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signInModal"
+                    style="--bs-aspect-ratio: 50%"
+                  >
+                    <span
+                      class="btn btn-light shadow absolute-x-y btn-video-play"
+                    >
+                      <i class="bi bi-play-circle-fill"></i>
+                    </span>
+                    <img
+                      src="assets/images/code/4.png"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </button>
+                </div>
+
+                <div class="col-12">
+                  <div class="testimonial-group">
+                    <div class="row text-center g-1">
+                      <div class="col-4">
+                        <button
+                          type="button"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signInModal"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/1.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                      <div class="col-4">
+                        <button
+                          type="button"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signInModal"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/2.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                      <div class="col-4">
+                        <button
+                          type="button"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signInModal"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/3.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                      <div class="col-4">
+                        <button
+                          type="button"
+                          class="btn btn-primary ratio ratio-1x1 overflow-hidden p-0 position-relative"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signInModal"
+                        >
+                          <span
+                            class="btn btn-light shadow absolute-x-y btn-video-play"
+                          >
+                            <i class="bi bi-play-circle-fill"></i>
+                          </span>
+                          <img
+                            src="assets/images/code-vertical/4.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end trending category-->
+        <div class="py-2"></div>
+        <!--start sales category section with slider-->
+        <div class="sales-category-wrapper">
+          <h4 class="my-2 fw-bold section-title">
+            Các khoá học khác
+          </h4>
+          <div class="sales-accessories-slider">
+            <div class="card rounded-3 overflow-hidden">
+              <a href="#"
+                ><img
+                  src="assets/images/accessories/01.webp"
+                  class="img-fluid"
+                  alt=""
+              /></a>
+              <div class="card-body text-center">
+                <p class="mb-0 fw-bold">Tiếng Nhật N5</p>
+              </div>
+            </div>
+            <div class="card rounded-3 overflow-hidden">
+              <a href="#"
+                ><img
+                  src="assets/images/accessories/02.webp"
+                  class="img-fluid"
+                  alt=""
+              /></a>
+              <div class="card-body text-center">
+                <p class="mb-0 fw-bold">Tiếng Nhật N4</p>
+              </div>
+            </div>
+            <div class="card rounded-3 overflow-hidden">
+              <a href="#"
+                ><img
+                  src="assets/images/accessories/03.webp"
+                  class="img-fluid"
+                  alt=""
+              /></a>
+              <div class="card-body text-center">
+                <p class="mb-0 fw-bold">Tiếng Nhật N3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end sales section with slider-->
+      </div>
+      <!--end to page content-->
+
+      <!--start to footer-->
+      <footer
+        class="page-footer fixed-bottom border-top d-flex align-items-center"
+      >
+        <nav class="navbar navbar-expand p-0 flex-grow-1">
+          <div
+            class="navbar-nav align-items-center justify-content-between w-100"
+          >
+            <a class="nav-link" href="home.html">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon">
+                  <i class="bi bi-house-fill"></i>
+                </div>
+                <div class="name">Trang chủ</div>
+              </div>
+            </a>
+            <a class="nav-link" href="about-us.html">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon">
+                  <i class="bi bi-info-square"></i>
+                </div>
+                <div class="name">Thông tin công ty</div>
+              </div>
+            </a>
+            <a class="nav-link" href="contact-us.html">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon">
+                  <i class="bi bi-person-lines-fill"></i>
+                </div>
+                <div class="name">Liên hệ</div>
+              </div>
+            </a>
+          </div>
+        </nav>
+      </footer>
+      <!--end to footer-->
+
+      <!--start sidenav-->
+      <div class="sidenav">
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasSidenav"
+        >
+          <div
+            class="offcanvas-header bg-dark border-bottom border-light"
+          >
+            <div class="hstack gap-3">
+              <div class="">
+                <img
+                  src="assets/images/people/1.png"
+                  width="45"
+                  class="rounded-3 p-1 bg-white"
+                  alt=""
+                />
+              </div>
+              <div class="details">
+                <h6 class="mb-0 text-white">Hi! Tiến Nguyễn</h6>
+              </div>
+            </div>
+            <div data-bs-dismiss="offcanvas">
+              <i class="bi bi-x-lg fs-5 text-white"></i>
+            </div>
+          </div>
+          <div class="offcanvas-body p-0">
+            <nav class="sidebar-nav">
+              <ul class="metismenu" id="sidenav">
+                <li>
+                  <a href="#">
+                    <i class="bi bi-house-door me-2"></i>
+                    Trang chủ
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="bi bi-emoji-smile me-2"></i>
+                    Giới thiệu
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!--end sidenav-->
+    </div>
+    <!--end wrapper-->
+
+    <!--JS Files-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/cookies-theme-switcher.js"></script>
+    <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+    <script src="assets/plugins/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+
+  <!-- Modal #signInModal-->
+  <div
+    class="modal fade"
+    id="signInModal"
+    tabindex="-1"
+    aria-labelledby="signInModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signInModalLabel">
+            Đăng nhập để trải nghiệm toàn bộ khoá học
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control rounded-3"
+                id="floatingInputEmail"
+                placeholder="Tài khoản"
+              />
+              <label for="floatingInputEmail">Tài khoản</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control rounded-3"
+                id="floatingInputEmail"
+                placeholder="Mật khẩu"
+              />
+              <label for="floatingInputEmail">Mật khẩu</label>
+            </div>
+
+            <div class="mb-0 d-grid">
+              <button class="btn btn-dark btn-ecomm rounded-3">
+                Đăng nhập
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal #CURDVideoModal-->
+  <div
+    class="modal fade"
+    id="CURDVideoModal"
+    tabindex="-1"
+    aria-labelledby="CURDVideoModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="CURDVideoModalLabel">
+            Nhập Youtube URL
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form class="">
+            <div class="form-floating mb-3 d-none">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/u1MwWSN_tQI?start=218&autoplay=1&mute=1"
+                  allow="autoplay"
+                  title="YouTube video"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="url"
+                class="form-control rounded-3"
+                id="floatingInputEmail"
+              />
+              <label for="floatingInputEmail">Youtube URL</label>
+            </div>
+
+            <div class="mb-0 d-grid">
+              <button class="btn btn-dark btn-ecomm rounded-3">
+                Nộp bài
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
