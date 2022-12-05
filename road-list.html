@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light-theme">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -42,15 +42,11 @@
     />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/dark-theme.css" rel="stylesheet" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    /> -->
     <link href="assets/css/custom.css" rel="stylesheet" />
   </head>
-  <body class="course-detail">
+  <body>
     <!--page loader-->
-    <div class="loader-wrapper d-none">
+    <div class="loader-wrapper">
       <div
         class="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle"
       >
@@ -64,7 +60,9 @@
     <!--start wrapper-->
     <div class="wrapper">
       <!--start to header-->
-      <header class="top-header fixed-top border-bottom">
+      <header
+        class="top-header fixed-top border-bottom d-flex align-items-center"
+      >
         <nav
           class="navbar navbar-expand w-100 p-0 gap-3 align-items-center"
         >
@@ -80,8 +78,10 @@
               ><i class="bi bi-arrow-left"></i
             ></a>
           </div>
-          <div class="about-us">
-            <h6 class="mb-0 fw-bold text-dark">Khoá IT trung cấp</h6>
+          <div class="shop-category">
+            <h6 class="mb-0 fw-bold text-dark text-center">
+              Danh sách lộ trình
+            </h6>
           </div>
           <form class="searchbar">
             <div
@@ -121,84 +121,136 @@
             </li>
           </ul>
         </nav>
-        <div class="alert alert-secondary m-0" role="alert">
-          Các bạn sẽ học được những kỹ năng thực tếđể làm việc với
-          khách hàng
-        </div>
-        <ul class="nav nav-pills justify-content-center py-2">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"
-              >FE Logo</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FE menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FE sidebar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Video của thầy</a>
-          </li>
-        </ul>
       </header>
       <!--end to header-->
 
       <!--start to page content-->
       <div class="page-content">
-        <section class="bg-1 -m-3 p-3">
-          <div class="ratio ratio-16x9">
-            <iframe
-              src="https://www.youtube.com/embed/u1MwWSN_tQI?start=218"
-              title="YouTube video"
-              allowfullscreen
-            ></iframe>
+        <div class="row row-cols-2 g-3">
+          <div class="col">
+            <a href="#">
+              <div class="card rounded-3 mb-0">
+                <div class="card-body p-2">
+                  <div
+                    class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2"
+                  >
+                    <div class="category-name">
+                      <h6 class="mb-0 fw-bold text-dark text-center">
+                        Lộ trình thành Frontend developer
+                      </h6>
+                    </div>
+                    <div class="category-img">
+                      <img
+                        src="assets/images/roads/1.png"
+                        class="img-fluid rounded-circle"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-          <a href="#" class="avatar mt-2 btn btn-light">
-            <div class="ratio ratio-1x1">
-              <img src="assets/images/people/1.jpeg" alt="" />
-            </div>
-            <div class="p-2">
-              <p class="m-0">Tiến Nguyễn</p>
-            </div>
-          </a>
-        </section>
-        <div class="py-2 m-3"></div>
-        <section class="bg-1 -m-3 p-3">
-          <div class="ratio ratio-16x9">
-            <iframe
-              src="https://www.youtube.com/embed/u1MwWSN_tQI?start=218"
-              title="YouTube video"
-              allowfullscreen
-            ></iframe>
+          <div class="col">
+            <a href="#">
+              <div class="card rounded-3 mb-0">
+                <div class="card-body p-2">
+                  <div
+                    class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2"
+                  >
+                    <div class="category-name">
+                      <h6 class="mb-0 fw-bold text-dark text-center">
+                        Lộ trình thành Fullstack developer
+                      </h6>
+                    </div>
+                    <div class="category-img">
+                      <img
+                        src="assets/images/roads/2.png"
+                        class="img-fluid rounded-circle"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-          <a href="#" class="avatar mt-2 btn btn-light">
-            <div class="ratio ratio-1x1">
-              <img src="assets/images/people/1.jpeg" alt="" />
-            </div>
-            <div class="p-2">
-              <p class="m-0">Tiến Nguyễn</p>
-            </div>
-          </a>
-        </section>
-        <div class="py-2 m-3"></div>
-        <section class="bg-1 -m-3 p-3">
-          <div class="ratio ratio-16x9">
-            <iframe
-              src="https://www.youtube.com/embed/u1MwWSN_tQI?start=218"
-              title="YouTube video"
-              allowfullscreen
-            ></iframe>
+
+          <div class="col">
+            <a href="#">
+              <div class="card rounded-3 mb-0">
+                <div class="card-body p-2">
+                  <div
+                    class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2"
+                  >
+                    <div class="category-name">
+                      <h6 class="mb-0 fw-bold text-dark text-center">
+                        Lộ trình thành Back-end developer
+                      </h6>
+                    </div>
+                    <div class="category-img">
+                      <img
+                        src="assets/images/roads/3.png"
+                        class="img-fluid rounded-circle"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-          <a href="#" class="avatar mt-2 btn btn-light">
-            <div class="ratio ratio-1x1">
-              <img src="assets/images/people/1.jpeg" alt="" />
-            </div>
-            <div class="p-2">
-              <p class="m-0">Tiến Nguyễn</p>
-            </div>
-          </a>
-        </section>
+
+          <div class="col">
+            <a href="#">
+              <div class="card rounded-3 mb-0">
+                <div class="card-body p-2">
+                  <div
+                    class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2"
+                  >
+                    <div class="category-name">
+                      <h6 class="mb-0 fw-bold text-dark text-center">
+                        Lộ trình thành nhà phân tích hệ thống
+                      </h6>
+                    </div>
+                    <div class="category-img">
+                      <img
+                        src="assets/images/roads/4.png"
+                        class="img-fluid rounded-circle"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#">
+              <div class="card rounded-3 mb-0">
+                <div class="card-body p-2">
+                  <div
+                    class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2"
+                  >
+                    <div class="category-name">
+                      <h6 class="mb-0 fw-bold text-dark text-center">
+                        Lộ trình thành lập trình viên ReactJS
+                      </h6>
+                    </div>
+                    <div class="category-img">
+                      <img
+                        src="assets/images/roads/5.png"
+                        class="img-fluid rounded-circle"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--end row-->
       </div>
       <!--end to page content-->
 
@@ -210,7 +262,7 @@
           <div
             class="navbar-nav align-items-center justify-content-between w-100"
           >
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="home.html">
               <div class="d-flex flex-column align-items-center">
                 <div class="icon">
                   <i class="bi bi-house-fill"></i>
@@ -218,22 +270,25 @@
                 <div class="name">Trang chủ</div>
               </div>
             </a>
-            <a class="nav-link" href="#">
+
+            <a class="nav-link" href="road-list.html">
               <div class="d-flex flex-column align-items-center">
                 <div class="icon"><i class="bi bi-grid"></i></div>
-                <div class="name">Các khoá học</div>
+                <div class="name">Lộ trình</div>
               </div>
             </a>
-            <a class="nav-link" href="#">
-              <div class="d-flex flex-column align-items-center">
-                <div class="icon"><i class="bi bi-person"></i></div>
-                <div class="name">Hồ sơ</div>
-              </div>
-            </a>
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="about-us.html">
               <div class="d-flex flex-column align-items-center">
                 <div class="icon">
-                  <i class="bi bi-question-circle"></i>
+                  <i class="bi bi-info-square"></i>
+                </div>
+                <div class="name">Thông tin công ty</div>
+              </div>
+            </a>
+            <a class="nav-link" href="contact-us.html">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon">
+                  <i class="bi bi-person-lines-fill"></i>
                 </div>
                 <div class="name">Liên hệ</div>
               </div>
@@ -270,25 +325,6 @@
               <i class="bi bi-x-lg fs-5 text-white"></i>
             </div>
           </div>
-          <div class="offcanvas-body p-0">
-            <nav class="sidebar-nav">
-              <ul class="metismenu" id="sidenav">
-                <li>
-                  <a href="#">
-                    <i class="bi bi-house-door me-2"></i>
-                    Trang chủ
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="bi bi-emoji-smile me-2"></i>
-                    Giới thiệu
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
         </div>
       </div>
       <!--end sidenav-->
@@ -303,8 +339,6 @@
     <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
     <script src="assets/plugins/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/index.js"></script>
     <script src="assets/js/loader.js"></script>
-    <script src="assets/js/custom.js"></script>
   </body>
 </html>
